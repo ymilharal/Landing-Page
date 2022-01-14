@@ -32,6 +32,9 @@
                 <li class="nav-item">
                     <a class="nav-link text" href="#">Transição</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text" href="adicionar.html">Acesso</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,14 +62,16 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="assets/img/Comida vegetariana.png"
-                    alt="Comida vegetariana">
+                <a href="receitas/vegetariana.html"><img class="d-block w-100" src="assets/img/Comida vegetariana.png"
+                        alt="Comida vegetariana"></a>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="assets/img/Comida vegana.png" alt="Comida vegana">
+                <a href="receitas/vegana.html"></a><img class="d-block w-100" src="assets/img/Comida vegana.png"
+                    alt="Comida vegana">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="assets/img/Sobremesa.png" alt="Sobremesa">
+                <a href="receitas/sobremesa.html"></a><img class="d-block w-100" src="assets/img/Sobremesa.png"
+                    alt="Sobremesa">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -174,35 +179,122 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-        <hr>
-        <footer>
-            <div class="row mb-3">
-                <div class="col-md-12 d-flex justify-content-center">
-                    <a href="https://github.com/ymilharal" target="_blank" class="p-2">
-                        <img class="tm-social" src="assets/img/github.png" alt="Logo do github">
-                    </a>
-                    <a href="https://www.instagram.com/yaslirio/" target="_blank" class="p-2">
-                        <img class="tm-social" src="assets/img/instagram.png" alt="Logo do instagram">
-                    </a>
-                    <a href="https://www.linkedin.com/in/yasmim-marques-santos-66a119225/" target="_blank" class="p-2">
-                        <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do linkedin">
-                    </a>
-                    <a href="https://www.facebook.com/Yasunicorn/" target="_blank" class="p-2">
-                        <img class="tm-social" src="assets/img/facebook.png" alt="Logo do facebook">
-                    </a>
-                    <a href="https://twitter.com/ymilharal" target="_blank" class="p-2">
-                        <img class="tm-social" src="assets/img/twitter.png" alt="Logo do twitter">
-                    </a>
+    </div>
+    </div>
+    <img src="assets/img/cozinhando.png" class="img-fluid d-block w-100" alt="Imagem responsiva">
+    <div class="jumbotron">
+        <h1 class="display-4">Entre em contato</h1>
+        <p class="lead">Se você tem uma receitinha ou sabe de alguma que não viu no site, (vale também receita autoral
+            ok? :)) mande pra gente, só informar alguns dados + a receita, vamos avaliar e postaremos assim que possivel
+            dando os devidos creditos.</p>
+    </div>
+    <div class="container">
+        <form class="needs-validation" novalidate>
+            <h3 class="text-center mb-4"> Adicione seus dados</h3>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nome" required>
+                        <div class="valid-tooltip">
+                            Tudo certo!
+                          </div>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Sobrenome" required>
+                        <div class="valid-tooltip">
+                            Tudo certo!
+                          </div>
+                    </div>
                 </div>
             </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Endereço de email:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" required>
+                <div class="invalid-tooltip">
+                    Por favor, escolha um usuário válido e único.
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Escolha sobre o que fala a receita:</label>
+                <select class="form-control" id="exampleFormControlSelect1" required>
+                    <option>Receita vegetariana</option>
+                    <option>Receita vegana</option>
+                    <option>Sobremesa vegetariana</option>
+                    <option>Sobremesa vegana</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Titulo da receita:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" required></textarea>
+                <div class="invalid-tooltip">
+                    Por favor, informe um CEP válido.
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Digite a receita aqui:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                <div class="invalid-tooltip">
+                    Por favor, informe um CEP válido.
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Uma foto da comida: (opcional)</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <button type="submit" class="btn btn-outline-primary btn-lg">Enviar</button>
+            </div>
+        </form>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <p class="text-center">
-                Todos os direitos reservados: Yasmim Marques &copy;
-            </p>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Sobre mim</h1>
+
+    </div>
+    <div class="media">
+        <img class="align-self-center mr-3" src="assets/img/yasmim3.png" alt="Imagem de exemplo genérica">
+        <div class="media-body">
+          <h5 class="mt-0 justify-content-center">Desenvolvedora do site - Mudavi</h5>
+          <p>Olá me chamo Yasmim Marques, tenho 20 anos e 1 filha chamada Ayla, atualmente sou estudante da Generation
+            Brasil para ser uma desenvolvedora web java full stack.
+            Dentro do curso aprendemos sobre a linguagem Java, a desenvolver uma pagina tanto no frontend e no backend,
+            também aprimoramos nossas softskils e simulamos um ambiente de trabalho real, com situações reais,
+            realizamos alguns projetos e esse é um deles.</p>
+          <p class="mb-0 text-center">A Mudavi veio de varias outras ideias que eu tive e foi a que eu achei melhor, é um site simples, com um
+            design de iniciante ainda e tem como proposta ser um site para o publico vegano e vegetariano, com receitas
+            e informações para ambos.
+            O Site possui receitas já cadastradas mas da a possibilidade do usuario inserir a sua propria receita.</p>
         </div>
-    </div>
+      </div>
+
+    <hr>
+    <footer>
+        <div class="row mb-3">
+            <div class="col-md-12 d-flex justify-content-center">
+                <a href="https://github.com/ymilharal" target="_blank" class="p-2">
+                    <img class="tm-social" src="assets/img/github.png" alt="Logo do github">
+                </a>
+                <a href="https://www.instagram.com/yaslirio/" target="_blank" class="p-2">
+                    <img class="tm-social" src="assets/img/instagram.png" alt="Logo do instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/yasmim-marques-santos-66a119225/" target="_blank" class="p-2">
+                    <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do linkedin">
+                </a>
+                <a href="https://www.facebook.com/Yasunicorn/" target="_blank" class="p-2">
+                    <img class="tm-social" src="assets/img/facebook.png" alt="Logo do facebook">
+                </a>
+                <a href="https://twitter.com/ymilharal" target="_blank" class="p-2">
+                    <img class="tm-social" src="assets/img/twitter.png" alt="Logo do twitter">
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">
+                    Todos os direitos reservados: Yasmim Marques &copy;
+                </p>
+            </div>
+        </div>
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
