@@ -16,7 +16,7 @@
     </style>
 </head>
 
-<body>
+<body style="background-color: #f7b731;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Mudavi</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
@@ -27,13 +27,13 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(página atual)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text" href="#">Transição</a>
+                    <a class="nav-link text" href="#sobre">Sobre mim</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text" href="adicionar.html">Acesso</a>
+                    <a class="nav-link text" href="#contato">Contato</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -41,10 +41,10 @@
                         Receitas
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="receitas/vegetariana.html">Vegetariana</a>
-                        <a class="dropdown-item" href="receitas/vegana.html">Vegana</a>
+                        <a class="dropdown-item" href="#vegetariana">Vegetariana</a>
+                        <a class="dropdown-item" href="#vegana">Vegana</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="receitas/sobremesa.html">Sobremesas</a>
+                        <a class="dropdown-item" href="#sobremesa">Sobremesas</a>
                     </div>
                 </li>
             </ul>
@@ -83,25 +83,27 @@
             <span class="sr-only">Próximo</span>
         </a>
     </div>
-    <div class="jumbotron">
-        <h1 class="display-4">Olá, mundo!</h1>
-        <p class="lead">Este é um simples componente jumbotron para chamar mais atenção a um determinado conteúdo ou
-            informação.</p>
+    <div class="jumbotron" id="home">
+        <h1 class="display-4">MUDAVI?</h1>
+        <p class="lead">O MUDAVI tem a proposta de ser um site simples com direcionamento para o publico vegano e
+            vegetariano, tanto para quem está começando quanto para os que já são de longa data. No espaço teremos
+            receitas para ambos os publicos, com informações nutricionais e até uma ajuda em uma dieta para quem está
+            começando.</p>
         <hr class="my-4">
-        <p>Ele usa classes utilitárias para tipografia e espaçamento de conteúdo, dentro do maior container.</p>
+        <p>Clique aqui para saber mais sobre esse mundo de vida.</p>
         <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
     </div>
     <div class="container">
         <div class="card-columns">
             <div class="card">
-                <img class="card-img-top" src="assets/img/Comida vegetariana.png" alt="Imagem de capa do card">
+                <img class="card-img-top" src="assets/img/Ceia de natal.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Ceia de natal vegetariana</h5>
                     <p class="card-text">Preparando uma ceia de natal para a familia? Vem ver essas opções vegetarianas
                         super saborosas e que eu tenho certeza que toda sua familia vai amar.</p>
                 </div>
             </div>
-            <div class="card p-3">
+            <div class="card p-3" id="vegetariana">
                 <blockquote class="blockquote mb-0 card-body">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                     <footer class="blockquote-footer">
@@ -111,12 +113,11 @@
                     </footer>
                 </blockquote>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="assets/img/Comida vegana.png" alt="Imagem de capa do card">
+            <div class="card" id="vegana">
+                <img class="card-img-top" src="assets/img/top5.png" alt="Imagem de capa do card">
                 <div class="card-body">
                     <h5 class="card-title">Top 5 sobremesas veganas</h5>
-                    <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a
-                        um conteúdo adicional.</p>
+                    <p class="card-text">Com vontade de um docinho? Separamos 5 receitas de sobremesas veganas que bombam.</p>
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
                 </div>
             </div>
@@ -138,8 +139,8 @@
                     <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
                 </div>
             </div>
-            <div class="card">
-                <img class="card-img" src="assets/img/Sobremesa.png" alt="Imagem do card">
+            <div class="card" id="sobremesa">
+                <img class="card-img" src="assets/img/mudavi.png" alt="Imagem do card">
             </div>
             <div class="card p-3 text-right">
                 <blockquote class="blockquote mb-0">
@@ -161,7 +162,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mt-5 mb-5">
+        <div class="row mt-5 mb-5 container">
             <div class="col-md-6">
                 <h3> Texto teste</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta vero fugit in autem. Possimus
@@ -188,35 +189,34 @@
             ok? :)) mande pra gente, só informar alguns dados + a receita, vamos avaliar e postaremos assim que possivel
             dando os devidos creditos.</p>
     </div>
-    <div class="container">
-        <form class="needs-validation" novalidate>
+    <div class="container" id="contato">
+        <form>
             <h3 class="text-center mb-4"> Adicione seus dados</h3>
+            <div class="row">
             <div class="form-group">
-                <div class="row">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Nome" required>
-                        <div class="valid-tooltip">
-                            Tudo certo!
-                          </div>
+                        <input type="text" id="nome" class="form-control" placeholder="Nome" onkeyup="validaNome()">
+                        <div id="txtNome">
+                        </div>
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Sobrenome" required>
-                        <div class="valid-tooltip">
-                            Tudo certo!
-                          </div>
                     </div>
+                    <div class="form-group">
+                        <div class="col">
+                        <input type="text" id="sobrenome" class="form-control" placeholder="Sobrenome" onkeyup="validaSobrenome()">
+                        <div id="txtSobrenome">
+                        </div>
+            </div>
+                </div>
+                </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Endereço de email:</label>
+                <input type="email" id="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" onkeyup="validaEmail()">
+                <div id="txtEmail">
                 </div>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Endereço de email:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" required>
-                <div class="invalid-tooltip">
-                    Por favor, escolha um usuário válido e único.
-                  </div>
-            </div>
-            <div class="form-group">
                 <label for="exampleFormControlSelect1">Escolha sobre o que fala a receita:</label>
-                <select class="form-control" id="exampleFormControlSelect1" required>
+                <select class="form-control" id="exampleFormControlSelect1">
                     <option>Receita vegetariana</option>
                     <option>Receita vegana</option>
                     <option>Sobremesa vegetariana</option>
@@ -225,49 +225,51 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Titulo da receita:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" required></textarea>
-                <div class="invalid-tooltip">
-                    Por favor, informe um CEP válido.
-                  </div>
+                <textarea class="form-control" id="titulo" id="exampleFormControlTextarea1" rows="1" onkeyup="validaTitulo()"></textarea>
+                <div id="txtTitulo">
+                </div>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Digite a receita aqui:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-                <div class="invalid-tooltip">
-                    Por favor, informe um CEP válido.
-                  </div>
+                <textarea class="form-control" id="assunto" id="exampleFormControlTextarea1" rows="3" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto">
+                </div>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlFile1">Uma foto da comida: (opcional)</label>
                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
-            <div class="d-flex justify-content-center mb-4">
+            <div class="d-flex justify-content-center mb-4" onclick="enviar()">
                 <button type="submit" class="btn btn-outline-primary btn-lg">Enviar</button>
             </div>
         </form>
     </div>
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" id="sobre">
         <h1 class="display-4">Sobre mim</h1>
 
     </div>
     <div class="media">
-        <img class="align-self-center mr-3" src="assets/img/yasmim3.png" alt="Imagem de exemplo genérica">
+        <img class="align-self-center mr-3 ml-5" src="assets/img/yasmim3.png" alt="Imagem de exemplo genérica">
         <div class="media-body">
-          <h5 class="mt-0 justify-content-center">Desenvolvedora do site - Mudavi</h5>
-          <p>Olá me chamo Yasmim Marques, tenho 20 anos e 1 filha chamada Ayla, atualmente sou estudante da Generation
-            Brasil para ser uma desenvolvedora web java full stack.
-            Dentro do curso aprendemos sobre a linguagem Java, a desenvolver uma pagina tanto no frontend e no backend,
-            também aprimoramos nossas softskils e simulamos um ambiente de trabalho real, com situações reais,
-            realizamos alguns projetos e esse é um deles.</p>
-          <p class="mb-0 text-center">A Mudavi veio de varias outras ideias que eu tive e foi a que eu achei melhor, é um site simples, com um
-            design de iniciante ainda e tem como proposta ser um site para o publico vegano e vegetariano, com receitas
-            e informações para ambos.
-            O Site possui receitas já cadastradas mas da a possibilidade do usuario inserir a sua propria receita.</p>
+            <h5 class="mt-0 justify-content-center">Desenvolvedora do site - Mudavi</h5>
+            <p class="mr-5">Olá me chamo Yasmim Marques, tenho 20 anos e 1 filha chamada Ayla, atualmente sou estudante da Generation
+                Brasil para ser uma desenvolvedora web java full stack.
+                Dentro do curso aprendemos sobre a linguagem Java, a desenvolver uma pagina tanto no frontend e no
+                backend,
+                também aprimoramos nossas softskils e simulamos um ambiente de trabalho real, com situações reais,
+                realizamos alguns projetos e esse é um deles.</p>
+            <p class="mr-5">A Mudavi veio de varias outras ideias que eu tive e foi a que eu achei melhor, é
+                um site simples, com um
+                design de iniciante ainda e tem como proposta ser um site para o publico vegano e vegetariano, com
+                receitas
+                e informações para ambos.
+                O Site possui receitas já cadastradas mas da a possibilidade do usuario inserir a sua propria receita.
+            </p>
         </div>
-      </div>
+    </div>
 
     <hr>
-    <footer>
+    <footer class= "container">
         <div class="row mb-3">
             <div class="col-md-12 d-flex justify-content-center">
                 <a href="https://github.com/ymilharal" target="_blank" class="p-2">
@@ -306,6 +308,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js">
+        
+    </script>
 </body>
 
 </html>
